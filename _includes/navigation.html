@@ -3,5 +3,6 @@
     {% for item in site.data.navigation %}  
         {% capture selected_link %}{{item.link | relative_url}}{% endcapture %}
         <a href="{{ item.link | relative_url}}" {% if curr_page == selected_link  %}class="current"{% endif %}>{{ item.name }}</a>
+        <label> asd</label>
     {% endfor %}
 </nav>

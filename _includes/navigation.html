@@ -1,8 +1,5 @@
 <nav>
-    {% capture curr_page %}{{page.url | relative_url}}{% endcapture %}
     {% for item in site.data.navigation %}  
-        {% capture selected_link %}{{item.link | relative_url}}{% endcapture %}
-        <a href="{{ item.link | relative_url}}" {% if curr_page == selected_link  %}class="current"{% endif %}>{{ item.name }}</a>
-        <label> asd</label>
+        <a href="{{ item.link | relative_url}}" {% if page.url == item.link  %}class="current"{% endif %}>{{ item.name }}</a>
     {% endfor %}
 </nav>

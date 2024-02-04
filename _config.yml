@@ -1,6 +1,6 @@
 domain: hansfdev.github.io
 url: https://hansfdev.github.io
-baseurl: /myporrtfolio
+baseurl: /myportfolio
 
 collections:
   projects:

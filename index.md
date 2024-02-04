@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div>
-  <h1>{{ "Hello World!"}}</h1>
+  <h1>{{ "About me"}}</h1>
 
   <ul>
     {% for project in site.projects %}

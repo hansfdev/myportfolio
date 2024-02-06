@@ -89,6 +89,7 @@ p{
 }
 
 .projectpreview{
+  cursor: pointer;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -100,6 +101,12 @@ p{
   height: 100%;
   text-align: center;
   background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.projectpreview:hover{
+  opacity: 1;
 }
 
 

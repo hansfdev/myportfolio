@@ -36,7 +36,7 @@ title: Home
     {% for project in site.projects %}
       {% if project.type == "personal" %}
       <li>
-        <div class="projectcontainer">
+        <div class="projectcontainer" onclick="window.location='{{ project.url | relative_url }}'">
           <img src="{{ project.imageurl | relative_url }}" class="projectimage">
           <div class="projectpreview">
             <div>

@@ -57,7 +57,7 @@ p{
 }
 
 .projectviewer{
-  margin: auto;
+  margin: 0 auto;
 }
 
 .projectviewer ul{
@@ -65,23 +65,41 @@ p{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
 }
 
 .projectviewer ul li{
   background-color: blue;
   text-decoration: none;
-  min-width: 300px;
-  min-height: 300px;
+  min-width: 256px;
+  min-height: 256px;
   margin: 5px;
   padding: 5px;
 }
 
-.projectviewer ul li div{
-  display: table-cell;
-  vertical-align: middle;
+.projectcontainer{
+  width: 256px;
+  height: 256px;
+  position: relative;
+}
+
+.projectimage{
+  width: 256px;
+  height: 256px;
+}
+
+.projectpreview{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -111,9 +129,9 @@ p{
 }
 
 nav {
-  width: 100%;
   background-color: rgb(30, 64, 119);
   padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
 

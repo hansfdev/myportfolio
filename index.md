@@ -18,7 +18,7 @@ title: Home
               <div>
                 <h2><a href="{{ project.url | relative_url }}">{{ project.name }}</a></h2>
                 <!-- <h3>{{ project.type }}</h3> -->
-                <p>Release date: {{ project.release_date }}</p>
+                <p>Release: {{ project.release_date }}</p>
                 <p> {{ project.summary }} </p>
               </div>
             </div>

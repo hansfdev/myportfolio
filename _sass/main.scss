@@ -42,6 +42,13 @@ h1{
   font-variation-settings:
     "wdth" 100;
 }
+h2{
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 label{
   font-optical-sizing: auto;
   font-weight: 200;
@@ -196,10 +203,35 @@ a:active {
   min-height: calc(100vh - 550px);
   background-color: rgb(0, 0, 0);
   padding: 20px;
+  align-self: center;
 }
 
 .project_description p {
-  margin: 0;
+  margin: auto;
+  max-width: 70%;
+  min-width: 400px;
+  text-align: left;
+}
+
+.project_description ul {
+  margin: auto;
+  max-width: fit-content;
+  text-align: left;
+}
+
+.project_description h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.project_description p img{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  min-width: 400px;
 }
 
 @media (min-width: 1200px) {

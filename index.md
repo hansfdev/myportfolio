@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <div class="maincontent">
-  <p> Hello there! Welcome to my web portfolio, here you can find detailed information about my professional and personal experience, as well as some information about myself.</p>
+  <p>Hello there! Welcome to my web portfolio, here you can find detailed information about my work experience and a little bit about me.</p>
 
   <h1>Professional Projects</h1>
 
@@ -42,7 +42,7 @@ title: Home
               <div>
                 <h2><a href="{{ project.url | relative_url }}">{{ project.name }}</a></h2>
                 <!-- <h3>{{ project.type }}</h3> -->
-                <p>Release date: {{ project.release_date }}</p>
+                <p>Release: {{ project.release_date }}</p>
                 <p> {{ project.summary }} </p>
               </div>
             </div>

@@ -207,7 +207,6 @@ a:active {
 
 .project_description p {
   margin: auto;
-  max-width: 70%;
   text-align: left;
 }
 
@@ -242,6 +241,11 @@ a:active {
 
 @media (min-width: 1200px) {
   nav{
+    text-align: left;
+  }
+  .project_description p {
+    margin: auto;
+    max-width: 70%;
     text-align: left;
   }
 }

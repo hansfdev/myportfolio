@@ -8,9 +8,14 @@ html, body {
   color: papayawhip;
 }
 
+html{
+  min-height: 100vh;
+}
+
 body{
   background: linear-gradient(#456169 , #35374B );
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 img,
@@ -74,8 +79,7 @@ li{
 }
 
 .maincontent{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 .projectviewer{
@@ -252,6 +256,34 @@ a:active {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.footerfill {
+  flex: 1;
+}
+
+.footer {
+  background-color: #35374B;
+  display: flex;
+  width: 100%;
+  height: 120px;
+}
+
+.footer .contact{
+  flex-grow: 1;
+  background-color: blue;
+  min-width: 150px;
+}
+
+.footer .social{
+  flex-grow: 3;
+  background-color: red;
 }
 
 @media (min-width: 1200px) {

@@ -195,6 +195,19 @@ nav a:active {
   color: rgb(255, 255, 255);
 }
 
+.footer a {
+  font-weight: 200;
+  color: rgb(29, 155, 177);
+}
+
+.footer a:hover {
+  color: rgb(38, 209, 240);
+}
+
+.footer a:active {
+  color: rgb(29, 155, 177);
+}
+
 .maincontent a:hover {
   color: rgb(38, 209, 240);
   animation: grow 1s linear alternate infinite;
@@ -214,7 +227,6 @@ nav a:active {
 
 
 .project_description {
-  min-width: 100%;
   min-height: calc(100vh - 550px);
   background-color: #35374b;
   padding: 20px;
@@ -292,8 +304,8 @@ nav a:active {
 }
 
 .social-icon{
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   padding: 10px;
 }
 

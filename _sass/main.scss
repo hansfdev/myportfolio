@@ -248,7 +248,8 @@ nav a:active {
 }
 
 .project_description ul {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 70%;
   text-align: left;
 }
@@ -260,12 +261,11 @@ nav a:active {
 
 .project_description p img{
   display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 85%;
-  min-width: 400px;
+  max-width: 100%;
 }
 
 .project_description video {
@@ -315,6 +315,18 @@ nav a:active {
   padding: 10px;
 }
 
+.img-flex-container{
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.img-flex-container img{
+  margin: 20px;
+}
+
 @media (min-width: 1200px) {
   nav{
     text-align: left;
@@ -324,7 +336,8 @@ nav a:active {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    max-width: 70%;
+    padding: 0px 20px 0px 20px;
+    max-width: 80%;
     text-align: left;
   }
 }

@@ -2,7 +2,7 @@
 layout: project
 name: Solo
 type: personal
-release_date: January, 2022
+date: 2022-01-01
 summary: Roblox singleplayer experience
 imageurl: /assets/images/solo_thumb.png
 bannerurl: /assets/images/solo_thumb.png

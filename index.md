@@ -9,7 +9,8 @@ title: Home
 
   <div class="projectviewer">
     <ul>
-      {% for project in site.projects %}
+      {% assign sorted = site.projects | reverse %}
+      {% for project in sorted %}
         {% if project.type == "professional" %}
         <li>
           <div class="projectcontainer" onclick="window.location='{{ project.url | relative_url }}'">
@@ -18,7 +19,7 @@ title: Home
               <div>
                 <h2><a href="{{ project.url | relative_url }}">{{ project.name }}</a></h2>
                 <!-- <h3>{{ project.type }}</h3> -->
-                <p>Release: {{ project.release_date }}</p>
+                <p>Release: {% if project.wip == true %} WIP {% else %} {{project.date | date: "%b, %Y"}} {% endif %}</p>
                 <p> {{ project.summary }} </p>
               </div>
             </div>
@@ -33,7 +34,7 @@ title: Home
 
   <div class="projectviewer">
     <ul>
-      {% for project in site.projects %}
+      {% for project in sorted %}
         {% if project.type == "personal" %}
         <li>
           <div class="projectcontainer" onclick="window.location='{{ project.url | relative_url }}'">
@@ -42,7 +43,7 @@ title: Home
               <div>
                 <h2><a href="{{ project.url | relative_url }}">{{ project.name }}</a></h2>
                 <!-- <h3>{{ project.type }}</h3> -->
-                <p>Release: {{ project.release_date }}</p>
+                <p>Release: {% if project.wip == true %} WIP {% else %} {{project.date | date: "%b, %Y"}} {% endif %}</p>
                 <p> {{ project.summary }} </p>
               </div>
             </div>

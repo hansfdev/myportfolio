@@ -78,6 +78,10 @@ li{
   "wdth" 100;
 }
 
+a{
+  text-decoration: none;
+}
+
 .maincontent{
   padding: 20px;
 }
@@ -126,7 +130,7 @@ li{
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -229,7 +233,8 @@ nav a:active {
 .project_description {
   min-height: calc(100vh - 550px);
   background-color: #35374b;
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
+  min-width: 100%;
   align-self: center;
 }
 
@@ -238,12 +243,13 @@ nav a:active {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 0px 20px 0px 20px;
   text-align: left;
 }
 
 .project_description ul {
   margin: auto;
-  max-width: fit-content;
+  max-width: 70%;
   text-align: left;
 }
 
@@ -284,14 +290,14 @@ nav a:active {
   background-color: #252735;
   display: flex;
   width: 100%;
-  height: 90px;
+  min-height: 90px;
 }
 
 .footer .contact{
   display: flex;
   flex-direction: column;
   align-self: center;
-  margin: 0px 20px 0px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .footer .social{

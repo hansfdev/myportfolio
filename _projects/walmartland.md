@@ -2,7 +2,7 @@
 layout: project
 name: WalmartLand
 type: professional
-release_date: September, 2022
+date: 2022-09-01
 summary: Roblox experience and event sponsored by Walmart
 imageurl: /assets/images/wl_thumb.jpg
 bannerurl: /assets/images/wl_banner.png

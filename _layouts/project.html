@@ -5,7 +5,7 @@ layout: default
 <div class="project_bg" style="background-image: linear-gradient(to bottom, #61616128, #35374b), url('{{ page.bannerurl | relative_url }}');">
     <div class="maincontent">
         <h1 style="margin-bottom: 0;"> {{ page.name }} </h1>
-        <p style="margin-top: 0;">Released: {{page.release_date}} </p>
+        <p style="margin-top: 0;">Released: {% if page.wip == true %} WIP {% else %} {{page.date | date: "%b, %Y"}} {% endif %} </p>
     </div>
 </div>
 <div class="project_description">

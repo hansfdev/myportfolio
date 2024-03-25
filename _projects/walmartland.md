@@ -22,4 +22,7 @@ The game consisted of a main hub and several thematic secondary hubs with miniga
 - Player data systems: currency, items, leaderboards.
 - Gameplay mechanics: physics mechanisms, minigame logic design and implementation.
 - UI implementation.
+- Some graphical elements like particles and dynamic effects.
+- Used experimental platform features to sync animations, audio and events in virtual concert.
+- Implemented a gamified DJ machine!
 - Bug and game exploit fixes.
